@@ -159,6 +159,9 @@ Adafruit_ssd1306syp display(SDA_PIN,SCL_PIN);
 //Servo servo_1;
 //Servo servo_2;
 
+//
+const int speedPwr = 100;
+
 
 void setup()
 {

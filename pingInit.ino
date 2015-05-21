@@ -80,29 +80,29 @@ void pingInit(){
   
   if(cm_1 && cm_2 < 50){
     warningInit();
-    motor(1, BRAKE, 255);
-    motor(2, BRAKE, 255); 
+    motor(1, BRAKE, speedPwr);
+    motor(2, BRAKE, speedPwr); 
     delay(5);
-    motor(1, BACKWARD, 255);
-    motor(2, FORWARD, 255); 
+    motor(1, BACKWARD, speedPwr);
+    motor(2, FORWARD, speedPwr); 
   }
   else if(cm_1 < 60 && cm_2 > 0){
-    motor(1, BRAKE, 255);
-    motor(2, BRAKE, 255); 
+    motor(1, BRAKE, speedPwr);
+    motor(2, BRAKE, speedPwr); 
     delay(5);
     motor(1, BACKWARD, 150);
     motor(2, FORWARD, 150); 
   }
   else if(cm_2 < 60 && cm_1 > 0){
-    motor(1, BRAKE, 255);
-    motor(2, BRAKE, 255); 
+    motor(1, BRAKE, speedPwr);
+    motor(2, BRAKE, speedPwr); 
     delay(5);
   motor(1, FORWARD, 150);
   motor(2, BACKWARD, 150); 
   }
   else if(cm_1 && cm_2 > 50){
-    motor(1, BRAKE, 255);
-    motor(2, BRAKE, 255); 
+    motor(1, BRAKE, speedPwr);
+    motor(2, BRAKE, speedPwr); 
     delay(5);
      motor(1, FORWARD, 155);
      motor(2, FORWARD, 155); 
@@ -110,15 +110,15 @@ void pingInit(){
      dangerInit();
   }
 //  if(cm_1 < 20){
-//  motor(1, BACKWARD, 255);
-//  motor(2, FORWARD, 255); 
+//  motor(1, BACKWARD, speedPwr);
+//  motor(2, FORWARD, speedPwr); 
 //
 //  }
 //
 //  else{
 //        
-//    motor(1, FORWARD, 255);
-//    motor(2, FORWARD, 255); 
+//    motor(1, FORWARD, speedPwr);
+//    motor(2, FORWARD, speedPwr); 
 //    happyInit();
 //    pirInit();
 //  }
